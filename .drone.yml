@@ -3,7 +3,6 @@ build:
   commands:
     - CC=musl-gcc CCGLAGS="-static" GOOS=linux GOARCH=arm GOARM=5 go get -ldflags '-linkmode external -s -w -extldflags "-static"' -a  github.com/kabukky/journey
     - cp $(which journey) ./
-    - upx -q --brute ./journey
 publish:
   docker:
     username: cblomart
