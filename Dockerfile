@@ -3,10 +3,10 @@ MAINTAINER Cédric Blomart <cblomart@gmail.com>
 
 EXPOSE 80 443
 
-ADD ./journey /
+ADD ./journey /journey/journey
 
-ADD ./promenade /content/themes/promenade
+ADD ./promenade /journey/content/themes/promenade
 
-VOLUME [ "/config.json", "/content" ]
+VOLUME [ "/journey" ]
 
-ENTRYPOINT [ "/journey" ]
+ENTRYPOINT [ "/journey/journey" ]
