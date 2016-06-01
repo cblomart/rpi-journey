@@ -5,6 +5,8 @@ EXPOSE 80 443 8084
 
 ADD ./journey /journey
 
+ADD ./built-in /
+
 ADD ./promenade /assets/content/themes/promenade
 
 VOLUME [ "/assets" ]
