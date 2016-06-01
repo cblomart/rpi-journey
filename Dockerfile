@@ -7,7 +7,7 @@ ADD ./journey /journey
 
 ADD ./promenade /assets/content/themes/promenade
 
-VOLUME [ "/journey" ]
+VOLUME [ "/assets" ]
 
 CMD [ "-custom-path=/assests" ]
 
