@@ -7,10 +7,10 @@ ADD ./journey /journey
 
 ADD ./built-in /
 
-ADD ./promenade /assets/content/themes/promenade
+ADD ./content /assets/content
 
 VOLUME [ "/assets" ]
 
-CMD [ "-custom-path=/assests" ]
+CMD [ "-custom-path=/assets" ]
 
 ENTRYPOINT [ "/journey" ]
