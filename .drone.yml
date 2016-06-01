@@ -6,8 +6,8 @@ build:
     - git submodule update --init --recursive
     - cd $DRONE_BUILD_DIR
     - cp $(which journey) ./
-    - cp -r $GOPATH/src/githun/kabukky/journey/built-in ./
-    - cp -r $GOPATH/src/githun/kabukky/journey/content ./
+    - cp -r $GOPATH/src/github.com/kabukky/journey/built-in ./
+    - cp -r $GOPATH/src/github.com/kabukky/journey/content ./
 publish:
   docker:
     username: cblomart
